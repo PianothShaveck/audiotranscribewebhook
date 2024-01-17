@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+const querystring = require('querystring');
 
 exports.handler = async (event, context) => {
   const params = querystring.parse(event.body);
