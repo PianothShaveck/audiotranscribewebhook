@@ -13,6 +13,7 @@
   "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "querystring": "^0.2.1"
   }
 }

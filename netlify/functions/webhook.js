@@ -1,7 +1,8 @@
 const mysql = require('mysql');
 
 exports.handler = async (event, context) => {
-  const data = JSON.parse(event.body);
+  const params = querystring.parse(event.body);
+  const data = JSON.parse(params.data);
   const expectedToken = process.env.token;
 
   if (data.verification_token !== expectedToken) {
